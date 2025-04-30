@@ -4,7 +4,6 @@
     --h2:#D4AF37;
     --boton: #D4AF37;
     --tex: #F5F5F5;
-
 }
 
 body {
@@ -32,7 +31,6 @@ a {
     z-index: 1000;
 }
 
-
 .barra_navegacion .link_navegacion a {
     margin: 0 10px;
     font-size: 20px;
@@ -48,6 +46,8 @@ a {
     text-decoration: underline; /* Agrega una linea debajo de la A */
     color: white;
 }
+
+
 
 
 /* hero------------------------------------ */
@@ -303,3 +303,4 @@ a {
         display: block !important;/* y lo converte en bloque*/                                
     }
 }
+
