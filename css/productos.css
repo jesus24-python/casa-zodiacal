@@ -129,11 +129,12 @@ a {
 }
 
 
-/* btn lateral derecho de la carta que aparece des pues de precioar ver mas-------------- */
+/* btn lateral derecho de la carta que aparece despues de precionar ver mas-------------- */
 .offcanvas .btn {
     width: 100%;
     background-color: var(--boton);
     box-shadow: 4px 4px 10px #3333339c;
+    font-weight: bold;
 }
 
 .offcanvas {
@@ -145,9 +146,14 @@ a {
     font-weight: bold;
 }
 
-
+.offcanvas p,
 .offcanvas h5 {
     color: white;
+}
+
+/* cambio de fondo de la X */
+.btn-close{
+    background-color: white;
 }
 
 /* boton contacto flotante ---------------------------*/
