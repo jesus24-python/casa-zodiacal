@@ -27,7 +27,7 @@ a {
 }
 
 /* barra de navegacion --------------------*/
-.barra_navegacion img {
+.barra_navegacion .logo img {
     width: 50px;
     height: 40px;
     background-color: aliceblue;
