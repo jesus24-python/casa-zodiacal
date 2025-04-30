@@ -1,0 +1,379 @@
+:root {
+    --primary: #1B1F3B;
+    --secundary: rgb(242, 211, 211);
+    --h2: #D4AF37;
+    --boton: #D4AF37;
+    --tex: #F5F5F5;
+
+}
+
+/* | Propósito         | Color               | Código HEX     | Sensación que transmite                  |
+|----------------------|---------------------|----------------|------------------------------------------|
+| Fondo principal      | Azul oscuro         | `#1B1F3B`      | Misterio, profundidad                    |
+| Detalles/destacados  | Dorado              | `#D4AF37`      | Riqueza, magia, lujo                     |
+| Tipografía clara     | Blanco humo         | `#F5F5F5`      | Claridad, contraste con fondos oscuros   | */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary);
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+/* barra de navegacion --------------------*/
+.barra_navegacion img {
+    width: 50px;
+    height: 40px;
+    background-color: aliceblue;
+}
+
+.barra_navegacion {
+    backdrop-filter: blur(8px);
+    position: fixed;
+    width: 100%;
+    height: 55px;
+    z-index: 1000;
+}
+
+.barra_navegacion a {
+    margin: 0 10px;
+    font-size: 20px;
+    color: #D4AF37;
+}
+
+.barra_navegacion a:hover {
+    text-decoration: underline; /* Agrega una linea debajo de la A */
+    color: white;
+}
+
+
+/* hero ----------------------------------------*/
+#hero {
+    height: 700px;
+}
+
+.fondo_inicio {
+    width: 100%;
+    height: 700px;
+}
+
+/* Sección Destacadas ----------------------------*/
+#destacadas h2 {
+    color: var(--h2);
+}
+
+.card_destacadas {
+    background-color: transparent;
+    border: none;
+    height: 450px;
+}
+
+.card_destacadas h5 {
+    color: var(--tex);
+}
+
+.card_destacadas img {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px 8px 0 0;
+}
+
+.card_destacadas a {
+    font-weight: bold;
+}
+
+/* boton de destacdas*/
+.card-body {
+    position: relative;
+}
+
+.btn_destacadas {
+    position: absolute;
+    bottom: 20px;
+    width: 80%;
+    transform: translateX(-50%);
+    background-color: var(--boton);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.585);
+}
+
+
+
+/* Seccion nosotros ------------------------------------*/
+
+#nosotros .container {
+    border-radius: 5px;
+
+}
+
+#nosotros img {
+    padding: 0 90px;
+    height: 400px;
+    background-color: white;
+}
+
+#nosotros h2 {
+    margin-bottom: 30px;
+    color: var(--h2);
+}
+
+#nosotros p {
+    color: var(--tex);
+}
+
+/* servicios ------------------------------------------*/
+#servicios h2 {
+    text-align: center;
+    color: var(--h2);
+}
+
+#servicios h3,
+#servicios p {
+    text-align: center;
+    color: var(--tex);
+}
+
+.card_servicios img {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px 8px 0 0;
+}
+
+.card_servicios {
+    background-color: var(--cartas);
+    border: none;
+    height: 470px;
+}
+
+.card_servicios .cartas_tarot {
+    margin-top: 40px;
+}
+
+/* catalago productos -----------------------------*/
+#productos h2 {
+    color: var(--h2);
+}
+
+#productos p {
+    color: white;
+}
+
+#productos .card_productos {
+    margin-top: 50px;
+}
+
+#productos .card_productos img:nth-child(1) {
+    width: 350px;
+}
+
+#productos .img-chiquitas {
+    margin-top: 15px;
+}
+
+#productos a {
+    font-weight: bold;
+}
+
+#productos .btn_productos {
+    background-color: var(--boton);
+    padding: 5px 50px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.585);
+}
+
+/* testimonio -----------------------------------------*/
+#testimonio {
+    height: 350px;
+}
+
+.card_testimonio {
+    background-color: transparent;
+    border: none;
+    margin-bottom: 80px;
+}
+
+.card_testimonio h5 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: var(--h2)
+}
+
+.card_testimonio p {
+    color: white;
+}
+
+.card_testimonio img {
+    margin-top: 50px;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+}
+
+/* boton contacto flotante----------------------------- */
+.contact-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.contact-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #45a049;
+}
+
+.contact-options {
+    margin-top: 15px;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-options a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.contact-options img {
+    width: 30px;
+}
+
+.contact-options a:hover {
+    text-decoration: underline;
+}
+
+/* footer---------------------------------- */
+.footer {
+    background-color: var(--primary);
+    height: auto;
+}
+
+.logo_footer img {
+    background-color: aliceblue;
+    width: 70px;
+    height: 70px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.footer .logo_footer,
+.footer .logo_footer a {
+    color: white;
+}
+
+.footer h5 {
+    color: var(--h2);
+}
+
+.footer ul li a {
+    color: rgb(152, 158, 152);
+}
+
+.footer .logo_footer .nosotros a {
+    font-weight: bold;
+    color: rgb(152, 158, 152);
+}
+
+
+/* Responsive ajustes personalizados -----------*/
+@media (max-width: 820px) {
+    .barra_navegacion {
+        height: auto;
+    }
+
+    .link_navegacion {
+        flex-direction: column;
+    }
+
+    .fondo_inicio {
+        object-fit: cover;
+    }
+
+    .card_destacadas {
+        width: 330px;
+        height: 350px;
+        justify-self: center;
+
+    }
+
+    .card_destacadas img {
+        width: 100%;
+        height: 200px;
+    }
+
+    #nosotros img {
+        width: 100%;
+        height: 200px;
+    }
+
+    #nosotros h2 {
+        text-align: center;
+        font-weight: bold;
+    }
+
+    #nosotros p {
+        margin-left: 15px;
+    }
+
+    .card_servicios {
+        width: 300px;
+        height: 400px;
+        justify-self: center;
+    }
+
+    .card_servicios img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .card_servicios p {
+        margin-top: 15px;
+    }
+
+    .card_servicios .cartas_tarot {
+        margin-top: 25px;
+    }
+
+    #testimonio {
+        width: auto;
+        height: auto;
+        margin-bottom: 0;
+    }
+
+    .card_testimonio img {
+        margin-top: 20px;
+        width: 70px;
+        height: 70px;
+        margin-left: 15px;
+    }
+
+    .card_testimonio h5 {
+        margin-left: 100px;
+        margin-top: -90px;
+        margin-bottom: 50px;
+    }
+
+}

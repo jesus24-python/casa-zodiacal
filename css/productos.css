@@ -1,0 +1,299 @@
+:root {
+    --primary: #1B1F3B;
+    --secundary: rgb(242, 211, 211);
+    --h2:#D4AF37;
+    --boton: #D4AF37;
+    --tex: #F5F5F5;
+
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* barra de navegacion------------------------- */
+.barra_navegacion .logo img {
+    width: 50px;
+    height: 40px;
+    background-color: var(--tex);
+}
+
+.barra_navegacion {
+    backdrop-filter: blur(8px);
+    position: fixed;
+    width: 100%;
+    height: 55px;
+    z-index: 1000;
+}
+
+
+.barra_navegacion .link_navegacion a {
+    margin: 0 10px;
+    font-size: 20px;
+    color: var(--h2);
+}
+
+.barra_navegacion .link_navegacion a img {
+    width: 40px;
+    height: 20px;
+}
+
+.barra_navegacion a:hover {
+    text-decoration: underline; /* Agrega una linea debajo de la A */
+    color: white;
+}
+
+
+/* hero------------------------------------ */
+#hero {
+    height: 700px;
+    background-color: var(--primary);
+}
+
+.fondo_inicio {
+    width: 100%;
+    height: 700px;
+}
+
+
+/* card productos ---------------------------*/
+.catalogo_productos {
+    background-color: var(--primary);
+}
+
+.catalogo_productos h1 {
+    font-size: 2.0rem;
+    color: var(--h2);
+}
+
+.carta_productos {
+    width: 100%;
+    height: 490px;
+    background-color: transparent;
+    border: none;
+}
+
+
+
+.catalogo_productos img {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px 8px 0 0;
+}
+
+.catalogo_productos h5 {
+    color: var(--tex);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.carta_productos p:nth-child(2) {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 25px;
+    color: var(--tex);
+}
+
+.catalogo_productos .btn_card {
+    display: flex;
+    gap: 10px;
+}
+
+.catalogo_productos .btn_card .btn {
+    width: 100%;
+    height: 40px;
+    font-weight: bold;
+    background-color: var(--boton);
+    box-shadow: 4px 4px 10px #3333339c;
+}
+
+.catalogo_productos .btn_icono {
+    background-color: var(--boton);
+    width: 60px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 4px 4px 10px #3333339c;
+}
+
+.catalogo_productos .btn_card img {
+    width: 30px;
+    height: 40px;
+}
+
+
+/* btn lateral derecho de la carta que aparece des pues de precioar ver mas-------------- */
+.offcanvas .btn {
+    width: 100%;
+    background-color: var(--boton);
+    box-shadow: 4px 4px 10px #3333339c;
+}
+
+.offcanvas {
+    background-color: var(--primary);
+}
+
+.offcanvas a{
+    color: black;
+    font-weight: bold;
+}
+
+
+.offcanvas h5 {
+    color: white;
+}
+
+/* boton contacto flotante ---------------------------*/
+.contact-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1100;
+}
+
+.contact-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #45a049;
+}
+
+.contact-options {
+    margin-top: 15px;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-options a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.contact-options img {
+    width: 30px;
+}
+
+.contact-options a:hover {
+    text-decoration: underline;
+}
+
+/* footer ------------------------------------*/
+
+.footer {
+    background-color: var(--primary);
+    height: auto;
+}
+
+.logo_footer img {
+    background-color: aliceblue;
+    width: 70px;
+    height: 70px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.footer .logo_footer,
+.footer .logo_footer a {
+    color: white;
+}
+
+.footer h5 {
+    color: var(--h2);
+}
+
+.footer ul li a {
+    color: rgb(152, 158, 152);
+}
+
+.footer .logo_footer .nosotros a {
+    font-weight: bold;
+    color: rgb(152, 158, 152);
+}
+
+
+
+/* Responsive ajustes personalizados ---------------------*/
+
+@media (max-width: 823px) {
+
+    .barra_navegacion {
+        height: auto;
+    }
+
+    .link_navegacion {
+        flex-direction: column;
+    }
+
+
+
+    .fondo_inicio {
+        object-fit: cover;
+    }
+
+    .carta_productos {
+        width: 330px;
+        height: 380px;
+        justify-self: center;
+        margin-top: 0;
+        margin-bottom: 15px;
+
+    }
+
+    .carta_productos img {
+        width: 100%;
+        height: 200px;
+    }
+
+    /* carrito compra--------- */
+
+    .carrito_compra {
+        position: fixed !important;
+        bottom: 100px;
+        right: 20px;
+        z-index: 1000;
+        background-color: var(--boton);
+        width: 60px;
+        height: 60px;
+        padding: 10px;
+        border-radius: 50%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .carrito_compra img {
+        width: 35px;
+        height: 40px;
+    }
+
+    .navbar .carrito_compra {   
+        display: none; /* saca el carrito del navbar*/
+    }
+
+    .carrito_flotante {
+        display: block !important;/* y lo converte en bloque*/                                
+    }
+}

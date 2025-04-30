@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script defer src="./js/script.js"></script>
+    <link rel="shortcut icon" href="https://img.icons8.com/emoji/48/capricorn-emoji.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/productos.css">
+    <title>Casa zodiacal</title>
+</head>
+
+<body>
+    <header>
+        <nav class="barra_navegacion    navbar navbar-expand-lg">
+            <div class="container">
+                <a class="logo navbar-brand" href="/index.html">
+                    <img src="icon/icono.png" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="link_navegacion collapse navbar-collapse" id="navbarNav">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                        <a class="nav-link" href="productos.html">Productos</a>
+                        <a class="nav-link" href="index.html#nosotros">Nosotros</a>
+                        <a class="nav-link" href="index.html#servicios">Servicios</a>
+
+                        <a class="carrito_compra nav-link position-relative" href="#" data-bs-toggle="offcanvas"
+                            data-bs-target="#carrito">
+                            <img src="icon/carrito.png" alt="" style="width: 25px; height: 25px;">
+                            <span id="contador-carrito"
+                                class="bolita_carrito position-absolute  start-100 translate-middle badge rounded-pill bg-danger">
+                                0
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero -------------------------------------->
+        <section id="hero" class="text-center">
+            <div class="container">
+                <div>
+                    <img class=" fondo_inicio img-fluid w-100 " src="img zodiacal/perfil casa zodiacal la sexta.jpg"
+                        alt="casa zodiacal" />
+                </div>
+            </div>
+        </section>
+    </header>
+
+
+
+    <section class="catalogo_productos ">
+        <div class="container">
+            <h1 class="text-center py-5">Productos</h1>
+            <div class="row  row-cols-sm-4 col-lg-12 g-4 ">
+
+                <!-- prdoducto 1 ---------------------------->
+                <div class="col">
+                    <div class="carta_productos  card mb-3">
+                        <img src="img zodiacal/Anillos tejidos con balines de acero.jpg" class="card-img-top"
+                            alt="anillo tejido">
+                        <div class="card-body">
+                            <h5 class="card-title">anillos tejidos con balines</h5>
+                            <p>$13.000</p>
+
+                            <div class="btn_card">
+                                <button type="button" class="btn_icono mb-3"><img src="icon/icons8-shopping-cart-48.png"
+                                        alt=""></button>
+                                <button class="btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasProducto1">Ver
+                                    más</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  Producto 1 Offcanvas lateral derecho -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasProducto1"
+                    aria-labelledby="offcanvasProducto1Label">
+                    <div class="offcanvas-header">
+                        <h5 id="offcanvasProducto1Label">✨ Anillos Tejidos con Balines </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                            aria-label="Cerrar"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <img src="img zodiacal/Anillos tejidos con balines de acero.jpg" class="img-fluid mb-3"
+                            alt="anillo tejido">
+                        <p><strong>Precio:</strong> $13.000</p>
+                        <p>
+                            Nuestros anillos tejidos con balines están diseñados para ser más que una joya: son símbolos
+                            de energía y conexión personal. Cada pieza es elaborada a mano con hilo
+                            resistente y balines metálicos cuidadosamente seleccionados, formando un diseño delicado
+                            pero con carácter.</p>
+
+                        <p> Inspirados en la armonía de los signos zodiacales y la fuerza de la energía personal, estos
+                            anillos actúan como amuletos que puedes llevar todos los días. Ya sea que busques
+                            equilibrio, protección, atracción o simplemente un recordatorio de tu poder interior, este
+                            anillo está hecho para ti.</p>
+
+                        <p>✨ Ajustables, livianos y llenos de significado.</p>
+                        <p> ✨ Hechos con amor y propósito en cada nudo.</p>
+                        <p>✨ Elige el color o diseño que más conecte contigo… o con tu signo zodiacal.</p>
+                        <button class="btn agregar-carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <!-- producto  2---------------->
+                <div class="col">
+                    <div class="carta_productos  card">
+                        <img src="img zodiacal/baños de hierbas.jpg" alt="baños de hierbas">
+                        <div class="card-body">
+                            <h5 class="card-title">Baños de hierbas</h5>
+                            <p class="card-text">$150.000</p>
+
+                            <div class="btn_card">
+                                <button type="button" class="btn_icono mb-3"><img src="icon/icons8-shopping-cart-48.png"
+                                        alt=""></button>
+                                <button class="btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasProducto2">Ver
+                                    más</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  Producto 2 Offcanvas lateral derecho -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasProducto2"
+                    aria-labelledby="offcanvasProducto1Label">
+                    <div class="offcanvas-header">
+                        <h5 id="offcanvasProducto1Label">Baños de hierbas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                            aria-label="Cerrar"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <img src="img zodiacal/baños de hierbas.jpg" class="img-fluid mb-3" alt="baño de hierbas">
+                        <p><strong>Precio:</strong> $150.000</p>
+
+                        <p>En Casa Zodiacal, creemos en el poder ancestral de la naturaleza. Nuestro baño de hierbas
+                            está elaborado con una mezcla sagrada de plantas seleccionadas por sus propiedades
+                            purificadoras, calmantes y protectoras. Ideal para soltar cargas emocionales, limpiar el
+                            aura y reconectar con tu energía esencial.</p>
+
+                        <p>💫 Ingredientes naturales: ruda, romero, lavanda, menta, albahaca y pétalos de flores.</p>
+                        <p>💫 Preparado con intención para rituales de luna, cambio de ciclo o momentos de
+                            transformación.</p>
+                        <p>💫 Úsalo en la ducha o en un baño de inmersión para abrir caminos, calmar la mente y
+                            armonizar tu energía.</p>
+
+
+                        <button class="btn agregar-carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <!-- producto 3 -->
+                <div class="col">
+                    <div class="carta_productos  card">
+                        <img src="img zodiacal/cadena santa muerte.jpg" class="" alt="cadena santa muerte">
+                        <div class="card-body">
+                            <h5 class="card-title">Cadena de la santa muerte</h5>
+                            <p class="card-text">$100.000</p>
+                            <div class="btn_card">
+                                <button type="button" class="btn_icono mb-3"><img src="icon/icons8-shopping-cart-48.png"
+                                        alt=""></button>
+                                <button class="btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasProducto3">Ver
+                                    más</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  Producto 3 Offcanvas lateral derecho -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasProducto3"
+                    aria-labelledby="offcanvasProducto1Label">
+                    <div class="offcanvas-header">
+                        <h5 id="offcanvasProducto1Label">Cadena de la santa muerte</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                            aria-label="Cerrar"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <img src="img zodiacal/cadena santa muerte.jpg" class="img-fluid mb-3" alt="Jabón Artesanal">
+                        <p><strong>Precio:</strong> $100.000</p>
+                        <p><strong>Protección, devoción y fuerza espiritual</strong></p>
+                        <p>Honra tu fe y fortalece tu energía con nuestra cadena de la Santa Muerte, un símbolo
+                            de respeto, transformación y guía espiritual. Diseñada para quienes caminan de la mano
+                            con la Niña Blanca, esta cadena no es solo un accesorio: es un vínculo sagrado con lo
+                            invisible.</p>
+
+                        <p>🔮 Dije de la Santa Muerte en metal o baño dorado/plateado (según modelo).</p>
+                        <p>🔮 Cadena resistente, ideal para uso diario o ritual.</p>
+                        <p>🔮 Consagrada con intención para brindar protección, claridad y justicia espiritual.</p>
+
+                        <p>✨ Llévala cerca de tu pecho como un escudo espiritual.</p>
+                        <p>✨ Perfecta para devotos, practicantes y quienes sienten su llamado.</p>
+                        <p> ✨ Cada pieza puede incluir una oración o mensaje canalizado por nuestras lectoras
+                            espirituales.</p>
+                        <button class="btn agregar-carrito">Agregar al carrito</button>
+
+                    </div>
+                </div>
+
+                <!-- producto  4-->
+                <div id="">
+                    <div class="col">
+                        <div class="aceites_corporal">
+                            <div class="carta_productos  card">
+                                <img src="img zodiacal/cadenas en acero.jpg" class="" alt="cadenas de acero">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cadena de acero</h5>
+                                    <p class="card-text">$50.000</p>
+
+                                    <div class="btn_card">
+                                        <button type="button" class="btn_icono mb-3"><img
+                                                src="icon/icons8-shopping-cart-48.png" alt=""></button>
+                                        <button class="btn" data-bs-toggle="offcanvas"
+                                            data-bs-target="#offcanvasProducto4">Ver más</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  Producto 4 Offcanvas lateral derecho -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasProducto4"
+                    aria-labelledby="offcanvasProducto1Label">
+                    <div class="offcanvas-header">
+                        <h5 id="offcanvasProducto1Label">cadenas de acero</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                            aria-label="Cerrar"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <img src="img zodiacal/cadenas en acero.jpg" class="img-fluid mb-3" alt="cadenas de acero">
+                        <p><strong>Precio:</strong> $50.000</p>
+
+                        <p>Cadena de Acero Inoxidable está creada para quienes desean llevar su energía con firmeza,
+                            protección y estilo. </p>
+
+                        <p>✨ Inquebrantable como tu espíritu: Hecha en acero inoxidable de alta calidad, esta cadena no
+                            se oxida ni pierde su brillo. Es perfecta para quienes necesitan una joya que resista el
+                            paso del tiempo, al igual que su fuerza interior.</p>
+
+                        <p>✨ Tu conexión con lo sagrado: Ideal para colgar amuletos, dijes espirituales o símbolos
+                            zodiacales que te acompañen en tu camino.</p>
+
+                        <p>✨ Versátil y poderosa: Su diseño minimalista combina con cualquier estilo y ocasión, pero su
+                            energía se transforma con la intención que tú le des.</p>
+
+                        <p>✨ Un canal para tu protección: Cárgala con tu energía, tu propósito o tu mantra. Cada eslabón
+                            puede ser una afirmación de poder y guía.</p>
+                        <button class="btn agregar-carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <!-- producto  5------------------------->
+                <div id="cepillos_bambu">
+                    <div class="col">
+                        <div class="carta_productos  card">
+                            <img src="img zodiacal/cartas-del-tarot.jpg" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">cartas del tarot</h5>
+                                <p class="card-text">$75.000</p>
+
+                                <div class="btn_card">
+                                    <button type="button" class="btn_icono mb-3"><img
+                                            src="icon/icons8-shopping-cart-48.png" alt=""></button>
+                                    <button class="btn" data-bs-toggle="offcanvas"
+                                        data-bs-target="#offcanvasProducto5">Ver más</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  Producto 5 Offcanvas lateral derecho -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasProducto5"
+                    aria-labelledby="offcanvasProducto1Label">
+
+                    <div class="offcanvas-header">
+                        <h5 id="offcanvasProducto1Label">cartas del tarot</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                            aria-label="Cerrar"></button>
+                    </div>
+
+                    <img src="img zodiacal/cartas-del-tarot.jpg" class="img-fluid mb-3" alt="cartas-del-tarot">
+                    <p><strong>Precio:</strong> $75.000</p>
+                    <p>Cada carta es una chispa de verdad, una voz del universo que susurra a tu alma. Nuestro mazo de
+                        Cartas del Tarot en Casa Zodiacal es más que un oráculo: es una herramienta sagrada para
+                        escuchar lo que tu intuición ya sabe.</p>
+                    <button class="btn agregar-carrito">Agregar al carrito</button>
+                </div>
+
+                <!-- producto  6-->
+                <div id="pulsera_santa_muerte" class="col">
+                    <div class="carta_productos  card">
+                        <img src="img zodiacal/Pulsera de la Santa Muerte.jpg" class="" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Pulsera de la santa muerte</h5>
+                            <p class="card-text">$50.000</p>
+
+                            <div class="btn_card">
+                                <button type="button" class="btn_icono mb-3"><img src="icon/icons8-shopping-cart-48.png"
+                                        alt=""></button>
+                                <button class="btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasProducto6">Ver
+                                    más</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  Producto 6 Offcanvas lateral derecho -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasProducto6"
+                    aria-labelledby="offcanvasProducto1Label">
+                    <div class="offcanvas-header">
+                        <h5 id="offcanvasProducto1Label">Pulsera de la santa muerte</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                            aria-label="Cerrar"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <img src="img zodiacal/Pulsera de la Santa Muerte.jpg" class="img-fluid mb-3"
+                            alt="Jabón Artesanal">
+                        <p><strong>Precio:</strong> $50.000</p>
+                        <p> Llévala contigo como símbolo de fe, fortaleza y transformación. Nuestra Pulsera de la Santa
+                            Muerte color plata está diseñada para quienes caminan junto a La Niña Blanca con respeto y
+                            devoción. </p>
+
+                        <p> ✨ Amuleto espiritual: La figura de la Santa Muerte en tono plata actúa como escudo protector
+                            frente a energías negativas, envidias o injusticias.</p>
+
+                        <p> 🧿 Conexión poderosa: Cada pulsera es consagrada con intención, para ayudarte a invocar
+                            guía, claridad y justicia espiritual en tu camino.</p>
+
+                        <p>🌑 Diseño ajustable y elegante: Ideal para uso diario o rituales, combina resistencia,
+                            sobriedad y fuerza interior.</p>
+
+                        <p>🌬️ Llévala cerca del pulso... donde vibra tu vida. </p>
+
+                        <button class="btn agregar-carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <!-- producto  7------------------------------------------------------>
+                <div id="pulsera_san_judas_verde" class="col">
+                    <div class="carta_productos  card">
+                        <img src="img zodiacal/Pulsera de San Judas hilo verde.jpg" class="" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Detergentes y limpiadores </h5>
+                            <p class="card-text">$400.000</p>
+
+                            <div class="btn_card">
+                                <button type="button" class="btn_icono mb-3"><img src="icon/icons8-shopping-cart-48.png"
+                                        alt=""></button>
+                                <button class="btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasProducto7">Ver
+                                    más</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  Producto 7 Offcanvas lateral derecho -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasProducto7"
+                    aria-labelledby="offcanvasProducto1Label">
+                    <div class="offcanvas-header">
+                        <h5 id="offcanvasProducto1Label">Detergentes y limpiadores </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                            aria-label="Cerrar"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <img src="img zodiacal/Pulsera de San Judas hilo verde.jpg" class="img-fluid mb-3"
+                            alt="Jabón Artesanal">
+                        <p><strong>Precio:</strong> $400.000</p>
+                        <p><strong>Ingredientes clave</strong></p>
+                        <p><strong>🫧 Jabón vegetal:</strong> Elimina grasa y suciedad de forma natural.</p>
+                        <p><strong>🧂 Bicarbonato de sodio:</strong> Neutraliza olores y desinfecta superficies.</p>
+                        <p><strong>🍶 Vinagre blanco:</strong> Potente limpiador y desincrustante natural.</p>
+                        <p><strong>🍋 Ácido cítrico:</strong> Disuelve la cal, suaviza el agua y desinfecta.</p>
+                        <p><strong>🌿 Aceites esenciales: </strong> Aromatizan y tienen propiedades antimicrobianas.</p>
+                        <button class="btn agregar-carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <!-- producto  8-->
+                <div class="col">
+                    <div class="carta_productos  card">
+                        <img src="img zodiacal/Pulsera cuero sintético de San Miguel Arcángel.jpg" class="" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Plantas secas naturales de</h5>
+                            <p class="card-text">$20.000</p>
+
+                            <div class="btn_card">
+                                <button type="button" class="btn_icono mb-3"><img src="icon/icons8-shopping-cart-48.png"
+                                        alt=""></button>
+                                <button class="btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasProducto8">Ver
+                                    más</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  Producto 8 Offcanvas lateral derecho -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasProducto8"
+                    aria-labelledby="offcanvasProducto1Label">
+                    <div class="offcanvas-header">
+                        <h5 id="offcanvasProducto1Label">Plantas secas de infusion</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                            aria-label="Cerrar"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <img src="img zodiacal/Pulsera cuero sintético de San Miguel Arcángel.jpg"
+                            class="img-fluid mb-3" alt="Jabón Artesanal">
+                        <p><strong>Precio:</strong> $20.000</p>
+                        <p><strong>Ingredientes clave</strong></p>
+                        <p><strong>🌼 Manzanilla: </strong> Calma, mejora la digestión y ayuda a conciliar el sueño.</p>
+                        <p><strong>🌿 Menta:</strong> Refrescante y digestiva.</p>
+                        <p><strong>🌱 Toronjil (melisa): </strong> Relajante, ideal para estrés y ansiedad.</p>
+                        <p><strong>🌺 Flor de jamaica:</strong>Diurética y antioxidante.</p>
+                        <p><strong>🫚 Jengibre seco:</strong>Estimula la circulación y alivia molestias digestivas.</p>
+                        <p><strong>🌰 Canela:</strong>Energizante, mejora la digestión y la circulación.</p>
+                        <button class="btn agregar-carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <!-- producto  9-->
+                <div id="san_mateo" class="col">
+                    <div class="carta_productos  card">
+                        <img src="img zodiacal/Pulsera de San Judas.jpg" class="" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Tintura Madre</h5>
+                            <p class="card-text">$30.000</p>
+
+                            <div class="btn_card">
+                                <button type="button" class="btn_icono mb-3"><img src="icon/icons8-shopping-cart-48.png"
+                                        alt=""></button>
+                                <button class="btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasProducto9">Ver
+                                    más</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  Producto 9 Offcanvas lateral derecho -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasProducto9"
+                    aria-labelledby="offcanvasProducto1Label">
+                    <div class="offcanvas-header">
+                        <h5 id="offcanvasProducto1Label">Tintura Madre</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                            aria-label="Cerrar"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <img src="img zodiacal/Pulsera de San Judas.jpg" class="img-fluid mb-3" alt="Jabón Artesanal">
+                        <p><strong>Precio:</strong> $30.000</p>
+                        <p><strong>Ingredientes clave</strong></p>
+                        <p><strong>🍶 Alcohol orgánico o glicerina vegetal: </strong> Extrae y conserva los principios
+                            activos.</p>
+                        <p><strong>🌿 Valeriana:</strong>Tranquilizante natural para el insomnio y la ansiedad.</p>
+                        <p><strong>🌸 Pasiflora:</strong>Relajante muscular y mental.</p>
+                        <p><strong>🌼 Caléndula:</strong> Antiinflamatoria y cicatrizante.</p>
+                        <p><strong>🌾 Equinácea:</strong>Refuerza el sistema inmunológico.</p>
+                        <button class="btn agregar-carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <!-- producto  10-->
+                <div id="pomadas">
+                    <div class="col">
+                        <div class="carta_productos  card">
+                            <img src="img zodiacal/pulsera san judas tejido negro.jpg" class="" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Pomadas</h5>
+                                <p class="card-text">$20.000</p>
+
+                                <div class="btn_card">
+                                    <button type="button" class="btn_icono mb-3"><img
+                                            src="icon/icons8-shopping-cart-48.png" alt=""></button>
+                                    <button class="btn" data-bs-toggle="offcanvas"
+                                        data-bs-target="#offcanvasProducto10">Ver más</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  Producto 10 Offcanvas lateral derecho -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasProducto10"
+                    aria-labelledby="offcanvasProducto1Label">
+                    <div class="offcanvas-header">
+                        <h5 id="offcanvasProducto1Label">Pomadas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                            aria-label="Cerrar"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <img src="img zodiacal/pulsera san judas tejido negro.jpg" class="img-fluid mb-3"
+                            alt="Jabón Artesanal">
+                        <p><strong>Precio:</strong> $20.000</p>
+                        <p><strong>Ingredientes clave</strong></p>
+
+                        </p>
+                        <button class="btn agregar-carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <!-- producto  11-->
+                <div id="santa_muerte_tejido">
+                    <div class="col">
+                        <div class="carta_productos  card">
+                            <img src="img zodiacal/pulsera santa muerte tejido negro.jpg" class="" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Pomadas</h5>
+                                <p class="card-text">$20.000</p>
+
+                                <div class="btn_card">
+                                    <button type="button" class="btn_icono mb-3"><img
+                                            src="icon/icons8-shopping-cart-48.png" alt=""></button>
+                                    <button class="btn" data-bs-toggle="offcanvas"
+                                        data-bs-target="#offcanvasProducto10">Ver más</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  Producto 11 Offcanvas lateral derecho -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasProducto10"
+                    aria-labelledby="offcanvasProducto1Label">
+                    <div class="offcanvas-header">
+                        <h5 id="offcanvasProducto1Label">Pomadas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                            aria-label="Cerrar"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <img src="img zodiacal/pulsera santa muerte tejido negro.jpg" class="img-fluid mb-3"
+                            alt="Jabón Artesanal">
+                        <p><strong>Precio:</strong> $20.000</p>
+                        <p><strong>Ingredientes clave</strong></p>
+
+                        </p>
+                        <button class="btn agregar-carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <!-- producto  12-->
+                <div id="pomadas">
+                    <div class="col">
+                        <div class="carta_productos  card">
+                            <img src="img zodiacal/pulseras de san judas.jpg" class="" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Pomadas</h5>
+                                <p class="card-text">$20.000</p>
+
+                                <div class="btn_card">
+                                    <button type="button" class="btn_icono mb-3"><img
+                                            src="icon/icons8-shopping-cart-48.png" alt=""></button>
+                                    <button class="btn" data-bs-toggle="offcanvas"
+                                        data-bs-target="#offcanvasProducto10">Ver más</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  Producto 12 Offcanvas lateral derecho -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasProducto10"
+                    aria-labelledby="offcanvasProducto1Label">
+                    <div class="offcanvas-header">
+                        <h5 id="offcanvasProducto1Label">Pomadas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                            aria-label="Cerrar"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <img src="img zodiacal/pulseras de san judas.jpg" class="img-fluid mb-3" alt="Jabón Artesanal">
+                        <p><strong>Precio:</strong> $20.000</p>
+                        <p><strong>Ingredientes clave</strong></p>
+
+                        </p>
+                        <button class="btn agregar-carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <!-- producto  13-->
+                <div id="pomadas">
+                    <div class="col">
+                        <div class="carta_productos  card">
+                            <img src="img zodiacal/amuletos.jpg" class="" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Pomadas</h5>
+                                <p class="card-text">$20.000</p>
+
+                                <div class="btn_card">
+                                    <button type="button" class="btn_icono mb-3"><img
+                                            src="icon/icons8-shopping-cart-48.png" alt=""></button>
+                                    <button class="btn" data-bs-toggle="offcanvas"
+                                        data-bs-target="#offcanvasProducto10">Ver más</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  Producto 13 Offcanvas lateral derecho -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasProducto10"
+                    aria-labelledby="offcanvasProducto1Label">
+                    <div class="offcanvas-header">
+                        <h5 id="offcanvasProducto1Label">Pomadas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                            aria-label="Cerrar"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <img src="img/pomadas.jpg" class="img-fluid mb-3" alt="Jabón Artesanal">
+                        <p><strong>Precio:</strong> $20.000</p>
+                        <p><strong>Ingredientes clave</strong></p>
+
+                        </p>
+                        <button class="btn agregar-carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <!-- producto  14-->
+                <div id="pomadas">
+                    <div class="col">
+                        <div class="carta_productos  card">
+                            <img src="----------------" class="" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Pomadas</h5>
+                                <p class="card-text">$20.000</p>
+
+                                <div class="btn_card">
+                                    <button type="button" class="btn_icono mb-3"><img
+                                            src="icon/icons8-shopping-cart-48.png" alt=""></button>
+                                    <button class="btn" data-bs-toggle="offcanvas"
+                                        data-bs-target="#offcanvasProducto10">Ver más</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  Producto 14 Offcanvas lateral derecho -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasProducto10"
+                    aria-labelledby="offcanvasProducto1Label">
+                    <div class="offcanvas-header">
+                        <h5 id="offcanvasProducto1Label">Pomadas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                            aria-label="Cerrar"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <img src="img/pomadas.jpg" class="img-fluid mb-3" alt="Jabón Artesanal">
+                        <p><strong>Precio:</strong> $20.000</p>
+                        <p><strong>Ingredientes clave</strong></p>
+
+                        </p>
+                        <button class="btn agregar-carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <!-- producto  15-->
+                <div id="pomadas">
+                    <div class="col">
+                        <div class="carta_productos  card">
+                            <img src="---------------" class="" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Pomadas</h5>
+                                <p class="card-text">$20.000</p>
+
+                                <div class="btn_card">
+                                    <button type="button" class="btn_icono mb-3"><img
+                                            src="icon/icons8-shopping-cart-48.png" alt=""></button>
+                                    <button class="btn" data-bs-toggle="offcanvas"
+                                        data-bs-target="#offcanvasProducto10">Ver más</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  Producto 15 Offcanvas lateral derecho -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasProducto10"
+                    aria-labelledby="offcanvasProducto1Label">
+                    <div class="offcanvas-header">
+                        <h5 id="offcanvasProducto1Label">Pomadas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                            aria-label="Cerrar"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <img src="img/pomadas.jpg" class="img-fluid mb-3" alt="Jabón Artesanal">
+                        <p><strong>Precio:</strong> $20.000</p>
+                        <p><strong>Ingredientes clave</strong></p>
+
+                        </p>
+                        <button class="btn agregar-carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <!-- producto  16-->
+                <div id="pomadas">
+                    <div class="col">
+                        <div class="carta_productos  card">
+                            <img src="------------------" class="" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Pomadas</h5>
+                                <p class="card-text">$20.000</p>
+
+                                <div class="btn_card">
+                                    <button type="button" class="btn_icono mb-3"><img
+                                            src="icon/icons8-shopping-cart-48.png" alt=""></button>
+                                    <button class="btn" data-bs-toggle="offcanvas"
+                                        data-bs-target="#offcanvasProducto10">Ver más</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  Producto 16 Offcanvas lateral derecho -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasProducto10"
+                    aria-labelledby="offcanvasProducto1Label">
+                    <div class="offcanvas-header">
+                        <h5 id="offcanvasProducto1Label">Pomadas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                            aria-label="Cerrar"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <img src="img/pomadas.jpg" class="img-fluid mb-3" alt="Jabón Artesanal">
+                        <p><strong>Precio:</strong> $20.000</p>
+                        <p><strong>Ingredientes clave</strong></p>
+
+                        </p>
+                        <button class="btn agregar-carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrito de compra (Offcanvas) ------------------->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="carrito" aria-labelledby="carritoLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="carritoLabel">🛒 Tu Carrito</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar" style="background-color: white;"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul id="lista-carrito" class="list-group mb-3"></ul>
+            <h5>Total: <span id="total">0</span> COP</h5>
+            <a id="btn-comprar" class="btn btn-success mt-3" target="_blank">Comprar por WhatsApp</a>
+        </div>
+    </div>
+
+
+    <!-- carrito flotante en version movil-------------------- -->
+    <a class="carrito_compra carrito_flotante d-none position-fixed" href="#" data-bs-toggle="offcanvas"
+    data-bs-target="#carrito">
+    <img src="icon/icons8-shopping-cart-48.png" alt="Carrito">
+    <span id="contador-carrito-fijo"
+          class="bolita_carrito position-absolute start-100 translate-middle badge rounded-pill bg-danger">
+       0
+    </span>
+ </a>
+ 
+
+
+    <!-- Botón flotante --------------------------->
+    <div class="contact-float">
+        <button id="toggleContact" class="contact-btn" style="justify-self: center;">✉️</button>
+
+        <!-- Opciones de contacto -------------------------------->
+        <div id="contactOptions" class="contact-options">
+            <h5>Contactanos mediante</h5>
+            <a href="https://wa.me/+573108959076" target="_blank"><img
+                    src="https://img.icons8.com/color/48/whatsapp--v1.png" alt=""> WhatsApp</a>
+            <a href="mailto:jesuspintoinstitutosena@gmail.com"><img src="https://img.icons8.com/fluency/48/mail--v1.png"
+                    alt=""> Correo</a>
+            <a href="https://www.facebook.com/profile.php?id=100055290742115"><img
+                    src="https://img.icons8.com/fluency/48/facebook-new.png" alt="">
+                Facebook</a>
+
+        </div>
+    </div>
+
+    <!-- footer ------------------------------------------->
+    <footer class="footer       bd-footer py-4 py-md-5  ">
+        <div class="container py-4 py-md-5 px-4 px-md-3 ">
+          <div class="row">
+            <div class="logo_footer col-lg-3 mb-3">
+              <a href=""><img src="icon/icono.png" alt="Logo"><strong> Casa zodiacal la sexta</strong></a>
+    
+              <ul class="nosotros      list-unstyled small">
+                <li class="mb-2">Diseñado y construido con todo el amor del mundo por el equipo de <a href="">Pastrana</a>. </li>
+              </ul>
+            </div>
+            <div class="col-6 col-lg-2 offset-lg-2 mb-3">
+              <h5>Links</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2"><a href="/">Inicio</a></li>
+                <li class="mb-2"><a href="productos.html">Productos</a></li>
+                <li class="mb-2"><a href="#nosotros">Nosotros</a></li>
+                <li class="mb-2"><a href="#servicios">servicios</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-lg-2 mb-3">
+              <h5>Contactos</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2"><a href="https://wa.me/+573108959076" target="_blank"><img  style="width: 25px;"   src="https://img.icons8.com/color/48/whatsapp--v1.png"alt=""></a></li>
+                <li class="mb-2"><a href="mailto:jesuspintoinstitutosena@gmail.com"><img  style="width: 25px;"    src="https://img.icons8.com/fluency/48/mail--v1.png"alt=""></a></li>
+                <li class="mb-2"><a href="https://www.facebook.com/profile.php?id=100055290742115"><img style="width: 25px;"  src="https://img.icons8.com/fluency/48/facebook-new.png" alt=""></a></li>
+             
+              </ul>
+        
+            </div>
+            <div class="col-6 col-lg-2 mb-3">
+              <h5>Ubicacion</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2"><a href="#" target="_blank" rel="noopener">La dorada</a></li>
+                <li class="mb-2"><a href="#" target="_blank" rel="noopener">Caldas</a></li>
+                <li class="mb-2"><a href="#" target="_blank" rel="noopener">CR 6 #17-45</a></li>
+              </ul>
+            </div>
+           
+          </div>
+        </div>
+      </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./js/carrito-handler.js"></script>
+
+</body>
+
+</html>
