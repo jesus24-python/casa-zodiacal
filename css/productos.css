@@ -257,14 +257,21 @@ a {
 @media (max-width: 823px) {
 
     .barra_navegacion {
+        backdrop-filter: blur(8px);
+        background-color: #52505078;
         height: auto;
+    }
+
+    .barra_navegacion a{
+        color: var(--tex);
+         
     }
 
     .link_navegacion {
         flex-direction: column;
+       
     }
-
-
+    
 
     .fondo_inicio {
         object-fit: cover;
