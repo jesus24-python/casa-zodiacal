@@ -322,3 +322,22 @@ a {
     }
 }
 
+
+
+@media screen and (max-width: 430px) {
+
+    .carta_productos
+    {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      float: none;
+    }
+  
+    .container,
+    .catalogo_productos {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  

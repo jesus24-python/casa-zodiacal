@@ -412,3 +412,22 @@ a {
     }
 
 }
+
+
+@media screen and (max-width: 430px) {
+    
+    .card_destacadas,
+    .card_servicios {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      float: none;
+    }
+  
+    .container
+    {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  
