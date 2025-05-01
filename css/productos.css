@@ -271,8 +271,9 @@ a {
     }
 
     .carta_productos {
+        justify-self: center;
         width: 330px;
-        height: 380px;
+        height: auto;
         justify-self: center;
         margin-top: 0;
         margin-bottom: 15px;
