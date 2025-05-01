@@ -107,12 +107,15 @@ a {
     gap: 10px;
 }
 
-.catalogo_productos .btn_card .btn {
+.catalogo_productos .btn {
     width: 100%;
     height: 40px;
     font-weight: bold;
     background-color: var(--boton);
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.585);
+}
+.catalogo_productos .btn:hover{
+    color: var(--tex);
 }
 
 .catalogo_productos .btn_icono {
@@ -122,6 +125,10 @@ a {
     border: none;
     border-radius: 8px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.585);
+}
+
+.catalogo_productos .btn_icono:hover{
+    background-color: transparent;
 }
 
 .catalogo_productos .btn_card img {
@@ -320,6 +327,19 @@ a {
     .carrito_flotante {
         display: block !important;/* y lo converte en bloque*/                                
     }
+
+    /* le quita el zoom a la carta de producto -----------*/
+    .carta_productos {
+        transition:none;
+    }
+
+    .carta_productos:hover{
+        transform: none;
+    }
+
+    
+
+
 }
 
 
@@ -327,7 +347,7 @@ a {
 
 
 
- @media screen and (max-width: 430px) {
+@media screen and (max-width: 430px) {
     .carta_productos
     {
         margin-left: auto !important;
@@ -348,5 +368,6 @@ a {
       padding-left: 15px;
       padding-right: 15px;
     }
+    
   }
   
