@@ -1,5 +1,5 @@
 :root {
-    --primary: #1B1F3B;
+    --primary: #12152c;
     --secundary: rgb(242, 211, 211);
     --h2: #D4AF37;
     --boton: #D4AF37;
@@ -18,12 +18,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--primary);
-    padding-left: env(safe-area-inset-left);
-    padding-right: env(safe-area-inset-right);
-    padding-top: env(safe-area-inset-top);
-    padding-bottom: env(safe-area-inset-bottom);
-    margin: 0;
-    overflow-x: hidden;
+    
       
 }
 
@@ -43,6 +38,7 @@ a {
 
 .barra_navegacion {
     backdrop-filter: blur(8px);
+    background-color: #52505078;
     position: fixed;
     width: 100%;
     height: 55px;
@@ -53,6 +49,7 @@ a {
     margin: 0 10px;
     font-size: 20px;
     color: #D4AF37;
+    
 }
 
 .barra_navegacion a:hover {
@@ -73,6 +70,7 @@ a {
 /* Sección Destacadas ----------------------------*/
 #destacadas h2 {
     color: var(--h2);
+     
 }
 
 .card_destacadas {
@@ -125,11 +123,6 @@ a {
 
 
 /* Seccion nosotros ------------------------------------*/
-
-#nosotros .container {
-    border-radius: 5px;
-
-}
 
 #nosotros img {
     padding: 0 90px;

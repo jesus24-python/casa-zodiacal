@@ -1,5 +1,5 @@
 :root {
-    --primary: #1B1F3B;
+    --primary: #12152c;
     --secundary: rgb(242, 211, 211);
     --h2:#D4AF37;
     --boton: #D4AF37;
@@ -26,6 +26,7 @@ a {
 
 .barra_navegacion {
     backdrop-filter: blur(8px);
+    background-color: #52505078;
     position: fixed;
     width: 100%;
     height: 55px;
