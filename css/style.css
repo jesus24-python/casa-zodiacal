@@ -38,6 +38,7 @@ a {
     width: 50px;
     height: 40px;
     background-color: aliceblue;
+    border-radius: 5px;
 }
 
 .barra_navegacion {
@@ -58,7 +59,6 @@ a {
     text-decoration: underline; /* Agrega una linea debajo de la A */
     color: white;
 }
-
 
 /* hero ----------------------------------------*/
 #hero {
@@ -96,7 +96,7 @@ a {
 }
 
 /* boton de destacdas*/
-.card-body {
+.card_destacadas .card-body {
     position: relative;
 }
 
@@ -107,6 +107,19 @@ a {
     transform: translateX(-50%);
     background-color: var(--boton);
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.585);
+}
+
+.card-body a:hover{ /* cambio de color de botones */
+    color: var(--tex);
+}
+
+/* le da zoom a las img -----------*/
+.card_destacadas img{
+    transition: transform 0.3 ease;
+}
+
+.card_destacadas img:hover{
+    transform: scale(1.05);
 }
 
 
@@ -151,8 +164,16 @@ a {
     border-radius: 8px;
 }
 
+.card_servicios img{
+    transition: transform 0.3 ease;
+}
+
+.card_servicios img:hover{
+    transform: scale(1.05);
+}
+
 .card_servicios {
-    background-color: var(--cartas);
+    background-color:transparent;
     border: none;
     height: 470px;
 }
@@ -192,6 +213,10 @@ a {
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.585);
 }
 
+#productos a:hover{ /* cambio de color de botones */
+    color: var(--tex);
+    background-color: var(--primary);
+}
 /* testimonio -----------------------------------------*/
 #testimonio {
     height: 350px;
@@ -219,6 +244,9 @@ a {
     height: 250px;
     border-radius: 100%;
 }
+
+
+
 
 /* boton contacto flotante----------------------------- */
 .contact-float {

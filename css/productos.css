@@ -21,6 +21,7 @@ a {
     width: 50px;
     height: 40px;
     background-color: var(--tex);
+    border-radius: 8px;
 }
 
 .barra_navegacion {
@@ -31,13 +32,13 @@ a {
     z-index: 1000;
 }
 
-.barra_navegacion .link_navegacion a {
+.barra_navegacion a {
     margin: 0 10px;
     font-size: 20px;
     color: var(--h2);
 }
 
-.barra_navegacion .link_navegacion a img {
+.barra_navegacion a img {
     width: 40px;
     height: 20px;
 }
@@ -72,19 +73,18 @@ a {
     color: var(--h2);
 }
 
+.catalogo_productos img {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px 8px 0 0;
+}
+
 .carta_productos {
     width: 100%;
     height: 490px;
     background-color: transparent;
     border: none;
-}
-
-
-
-.catalogo_productos img {
-    width: 100%;
-    height: 300px;
-    border-radius: 8px 8px 0 0;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.585);
 }
 
 .catalogo_productos h5 {
@@ -111,7 +111,7 @@ a {
     height: 40px;
     font-weight: bold;
     background-color: var(--boton);
-    box-shadow: 4px 4px 10px #3333339c;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.585);
 }
 
 .catalogo_productos .btn_icono {
@@ -120,12 +120,21 @@ a {
     height: 40px;
     border: none;
     border-radius: 8px;
-    box-shadow: 4px 4px 10px #3333339c;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.585);
 }
 
 .catalogo_productos .btn_card img {
     width: 30px;
     height: 40px;
+}
+
+/* le da zoom a la carta de producto -----------*/
+.carta_productos {
+    transition: transform 0.3 ease;
+}
+
+.carta_productos:hover{
+    transform: scale(1.05);
 }
 
 
@@ -272,7 +281,7 @@ a {
 
     .carta_productos img {
         width: 100%;
-        height: 200px;
+        height: 250px;
     }
 
     /* carrito compra--------- */
