@@ -452,10 +452,9 @@ a {
     }
 
     .contact-btn p{
-       display: grid;
-       justify-self: center;
+     
        
-       margin-right: 5px;
+       margin-right: 15px;
     }
     
   }
