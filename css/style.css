@@ -430,7 +430,8 @@ a {
    
     .card_destacadas,
     .card_servicios,
-    .card_testimonio {
+    .card_testimonio,
+    .contact-float {
       margin-left: auto !important;
       margin-right: auto !important;
       float: none !important;
@@ -438,7 +439,8 @@ a {
     }
     
     .card_destacadas,
-    .card_servicios {
+    .card_servicios,
+    .contact-float {
       display: block;
       margin-left: auto;
       margin-right: auto;
