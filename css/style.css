@@ -451,9 +451,11 @@ a {
       padding-right: 15px;
     }
 
-    .contact-btn{
+    .contact-btn p{
        display: grid;
        justify-self: center;
+       
+       margin-right: 5px;
     }
     
   }
