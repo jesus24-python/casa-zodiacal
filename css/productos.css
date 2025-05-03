@@ -336,14 +336,27 @@ a {
     .carta_productos:hover{
         transform: none;
     }
-
-    
-
-
 }
 
 
+@media screen and (min-width: 768px) and (max-width: 1180px){
+    .carta_productos{
+        width: auto;
+        height: 520px;
+    }
+    .carta_productos img{
+        width: 100%;  
+    }
 
+    .carta_productos .btn_card{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .carta_productos .btn_icono{
+        width: 100%;
+    }
+}
 
 
 
