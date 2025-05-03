@@ -7,14 +7,20 @@ document.addEventListener("DOMContentLoaded", function () {
     const contadorCarrito = document.getElementById("contador-carrito");
     const contadorCarritoFijo = document.getElementById("contador-carrito-fijo");
 
-    let carrito = [];
-    let total = 0;
+    // ✅ Cargar carrito y total desde localStorage si existen
+    let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+    let total = carrito.reduce((sum, item) => sum + item.precio, 0);
+
+    function guardarEnLocalStorage() {
+        localStorage.setItem("carrito", JSON.stringify(carrito));
+    }
 
     // Función para agregar productos al carrito
     function agregarProducto(nombre, precio, imagen) {
         carrito.push({ nombre, precio, imagen });
         total += precio;
         actualizarCarrito();
+        guardarEnLocalStorage();
     }
 
     // Función para eliminar un producto del carrito
@@ -22,6 +28,15 @@ document.addEventListener("DOMContentLoaded", function () {
         total -= carrito[index].precio;
         carrito.splice(index, 1);
         actualizarCarrito();
+        guardarEnLocalStorage();
+    }
+
+    // funcion vaciar carrito 
+    function vaciarCarrito(){
+        carrito = [];
+        total = 0;
+        actualizarCarrito();
+        localStorage.removeItem("carrito"); //  Elimina datos guardados
     }
 
     // Evento para agregar productos desde los botones en la card
@@ -72,18 +87,24 @@ document.addEventListener("DOMContentLoaded", function () {
         totalSpan.textContent = total.toLocaleString("es-CO");
         contadorCarrito.textContent = carrito.length;
 
-        // ✅ También actualizar el contador flotante si existe
         if (contadorCarritoFijo) {
             contadorCarritoFijo.textContent = carrito.length;
         }
 
-        // Mensaje para WhatsApp
-        const mensaje = encodeURIComponent("¡Hola! casa zodiacal un cordial saludo quisiera comprar los siguientes productos:\n" +
+        const mensaje = encodeURIComponent(
+            "¡Hola! casa zodiacal un cordial saludo quisiera comprar los siguientes productos:\n" +
             carrito.map(p => `- ${p.nombre}: $${p.precio}`).join("\n") +
-            `\n\nTotal: $${total.toLocaleString("es-CO")}`);
+            `\n\nTotal: $${total.toLocaleString("es-CO")}`
+        );
         btnComprar.href = `https://wa.me/573108959076?text=${mensaje}`;
     }
 
-    // Esta función debe estar en global para que el botón eliminar funcione
+    // ✅ Mostrar carrito guardado al cargar
+    actualizarCarrito();
+
+    // Hacer accesible la función eliminar desde el HTML
     window.eliminarProducto = eliminarProducto;
+
+    // vaciar carrito
+    window.vaciarCarrito = vaciarCarrito;
 });
