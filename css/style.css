@@ -429,7 +429,7 @@ a {
 @media screen and (min-width: 431px) and (max-width: 1180px){
     .card_destacadas,
     .card_servicios{
-        width: auto;
+        width: 200px;
         height: auto;
         
     }
