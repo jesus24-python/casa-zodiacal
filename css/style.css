@@ -334,7 +334,7 @@ a {
 
 .footer .logo_footer .nosotros a {
     font-weight: bold;
-    color: rgb(152, 158, 152);
+    color: var(--h2);
 }
 
 

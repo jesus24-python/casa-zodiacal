@@ -60,7 +60,12 @@ h1{
     color: var(--h2);
 }
 
-.card h5{
+.card_clientes h5{
+    color: var(--tex);
+    font-size: 1.4rem;
+}
+
+.card_personas h5{
     color: var(--tex);
     font-size: 1.4rem;
     margin-bottom: 20px;
@@ -121,5 +126,5 @@ h1{
 
 .footer .logo_footer .nosotros a {
     font-weight: bold;
-    color: rgb(152, 158, 152);
+    color: var(--h2);
 }
