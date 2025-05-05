@@ -46,7 +46,7 @@ a {
 
 .barra_navegacion a:hover {
     text-decoration: underline; /* Agrega una linea debajo de la A */
-    color: white;
+    color: var(--tex);
 }
 
 
