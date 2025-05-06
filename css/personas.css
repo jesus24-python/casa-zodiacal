@@ -68,13 +68,9 @@ h1{
     color: var(--tex);
     font-size: 1.4rem;
 }
-.card_personas,
-.card_clientes{
-    width: 320px !important;
-}
 
 .card{
-    width: 280px;
+    width: 300px;
     background-color: var(--primary);
     box-shadow: 4px 4px 10px black;
 }
