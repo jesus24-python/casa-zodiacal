@@ -477,8 +477,7 @@ a {
    
     .card_destacadas,
     .card_servicios,
-    .card_testimonio,
-    .formulario {
+    .card_testimonio{
       margin-left: auto !important;
       margin-right: auto !important;
       float: none !important;
@@ -486,8 +485,7 @@ a {
     }
     
     .card_destacadas,
-    .card_servicios,
-    .formulario{
+    .card_servicios{
       display: block;
       margin-left: auto;
       margin-right: auto;
