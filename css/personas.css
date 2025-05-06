@@ -68,19 +68,9 @@ h1{
     color: var(--tex);
     font-size: 1.4rem;
 }
-
-.card_personas h5{
-    color: var(--tex);
-    font-size: 1.4rem;
-    margin-bottom: 20px;
-    margin-top: 10px;
-}
-.card ul li{
-    border-top: 1px solid var(--boton);
-    color: var(--tex);
-    padding: 10px;
-    text-align: center;
-    font-size: 1.1rem;
+.card_personas,
+.card_clientes{
+    width: 320px !important;
 }
 
 .card{
@@ -89,13 +79,33 @@ h1{
     box-shadow: 4px 4px 10px black;
 }
 
+.card_personas{
+    margin: 25px;  
+}
+.card_personas h5{
+    color: var(--tex);
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
 .card_personas img{
     width: 100%;
    height: 250px;
 }
 
-.card_personas{
-    margin: 25px;  
+.card ul li{
+    border-top: 1px solid var(--boton);
+    color: var(--tex);
+    padding: 10px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.card ul li img{
+    margin-right: 8px;
+    width: 26px;
+    height: 26px;
 }
 
 
