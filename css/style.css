@@ -250,7 +250,31 @@ a {
     border-radius: 100%;
 }
 
+/* comentarios------------------------------------------ */
+.comentarios h3{
+    margin-top: 80px;
+    color: var(--h2);
+    text-align: center;
+}
 
+.comentarios .formulario{
+    margin-top: 25px;
+    justify-self: center;
+    
+}
+
+.comentarios .formulario input{
+    padding: 5px;
+    border: 1px var(--boton);
+    border-radius:5px ;
+    box-shadow: 5px 5px 10px black;
+}
+
+.comentarios .formulario .btn-2{
+    background-color: var(--boton);
+    padding: 5px 20px;
+    
+}
 
 
 /* boton contacto flotante----------------------------- */
@@ -423,6 +447,18 @@ a {
         margin-bottom: 50px;
     }
 
+    .comentarios .formulario{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .comentarios .formulario .campo{
+        width: 300px;
+    }
+    .comentarios .formulario .btn-2{
+        width: 100px;
+    }
 }
 
 /* 768 */
