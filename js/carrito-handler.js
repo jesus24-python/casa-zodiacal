@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function () {
             carrito.map(p => `- ${p.nombre}: $${p.precio}`).join("\n") +
             `\n\nTotal: $${total.toLocaleString("es-CO")}`
         );
-        btnComprar.href = `https://wa.me/573108959076?text=${mensaje}`;
+        btnComprar.href = `https://wa.me/573218111044?text=${mensaje}`;
     }
 
     // ✅ Mostrar carrito guardado al cargar
