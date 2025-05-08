@@ -102,9 +102,21 @@ a {
     color: var(--tex);
 }
 
+/* Asegura que el contenido dentro de la tarjeta se estire y alinee correctamente */
+.card-body {
+    flex-grow: 1; /* Esto hace que el contenido de la tarjeta ocupe el máximo espacio disponible */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Separa los elementos dentro de la tarjeta */
+}
+
+/* Contenedor de los botones de acción */
 .catalogo_productos .btn_card {
     display: flex;
     gap: 10px;
+    justify-content: center; /* Centra los botones horizontalmente */
+    align-items: flex-end; /* Alinea los botones al fondo del contenedor */
+    margin-top: auto; /* Empuja los botones hacia el final de la tarjeta */
 }
 
 .catalogo_productos .btn {
@@ -355,6 +367,7 @@ a {
 
     .carta_productos .btn_icono{
         width: 100%;
+        margin-bottom: 13px;
     }
 }
 
